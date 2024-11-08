@@ -112,8 +112,8 @@ void input_line(const char* title, char* buffer, int size) {
 }
 
 void search_word() {
-  char query[46];
-  input_line("Word: ", query, 46);
+  char query[47];
+  input_line("Word: ", query, 47);
   printf("\n");
 
   int len = strlen(query);
@@ -128,10 +128,10 @@ void search_word() {
 }
 
 void add_new_word() {
-  char word[46];
+  char word[47];
   char meaning[100];
 
-  input_line("Word: ", word, 46);
+  input_line("Word: ", word, 47);
   input_line("Meaning: ", meaning, 100);
 
   int len = strlen(word);
@@ -142,8 +142,8 @@ void add_new_word() {
 }
 
 void delete_word() {
-  char word[46];
-  input_line("Word: ", word, 46);
+  char word[47];
+  input_line("Word: ", word, 47);
 
   int len = strlen(word);
   dictionary[len] = dict_remove(dictionary[len], word);
